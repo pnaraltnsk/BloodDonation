@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/anasayfa"
+
+            android:title="Anasayfa" />
+        <item
+            android:id="@+id/hastaneler"
+
+            android:title="Hastaneler" />
+        <item
+            android:id="@+id/sss"
+
+            android:title="Sıkça Sorulan Sorular" />
+        <item
+            android:id="@+id/kullanıcı_hesabı"
+
+            android:title="Kullanıcı Hesabı" />
+        <item
+            android:id="@+id/bildirimler"
+
+            android:title="Bildirimler" />
+        <item
+            android:id="@+id/maps"
+
+            android:title="Kan Bağışı Yapılabilecek Hastaneler" />
+    </group>
+
+
+
+</menu>

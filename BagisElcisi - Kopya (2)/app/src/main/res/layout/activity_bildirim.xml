@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg_anasayfa"
+    tools:openDrawer="start">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_anasayfa"
+        tools:context=".RegisterActivity">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="70dp"
+            android:textSize="18dp"
+            android:background="@drawable/yumusatma"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="Mağusa, Kunter Güven Hastanesi
+             A Rh+ kan ihtiyacı bulunmaktadır.Yardım etmek ister misiniz?"
+            />
+
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="60dp"
+            android:background="@drawable/yumusatma"
+            android:layout_marginTop="190dp"
+            android:textSize="16dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="55dp"
+            android:padding="20dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="15dp"
+            android:text="Evet"
+            />
+
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="60dp"
+            android:padding="20dp"
+            android:layout_marginTop="190dp"
+            android:textSize="16dp"
+            android:background="@drawable/yumusatma"
+            android:layout_marginStart="215dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Hayır"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"/>
+
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+
+        app:menu="@menu/activity_main_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

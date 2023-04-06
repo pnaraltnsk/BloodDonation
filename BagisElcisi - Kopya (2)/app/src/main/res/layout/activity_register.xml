@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_anasayfa"
+
+        tools:context=".RegisterActivity">
+
+
+
+        <TextView
+            android:id="@+id/txtinfo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_new_account"
+
+            android:textColor="@android:color/white"
+
+            android:layout_marginTop="55dp"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp" />
+
+
+        <EditText
+            android:id="@+id/usernameregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtinfo1"
+            android:hint="İsim:"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorwhite"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+
+        <EditText
+            android:id="@+id/usersurnameregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernameregister"
+            android:hint="Soyisim:"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorwhite"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:id="@+id/btnregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_new_account"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/yumusatma"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="35dp"
+
+            android:textColor="@android:color/black"
+            />
+
+        <EditText
+            android:id="@+id/usermailregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usersurnameregister"
+            android:hint="E-mail:"
+            android:textColorHint="@color/colorwhite"
+            android:textColor="@android:color/white"
+
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+        <EditText
+            android:id="@+id/passwordregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usermailregister"
+            android:hint="@string/password"
+            android:textColorHint="@color/colorwhite"
+
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+
+            android:layout_marginRight="10dp"
+            />
+
+
+        <EditText
+            android:id="@+id/ageregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordregister"
+            android:hint="@string/age"
+            android:textColorHint="@color/colorwhite"
+
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+
+            android:layout_marginRight="10dp"
+            />
+
+
+        <EditText
+            android:id="@+id/numberregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ageregister"
+            android:hint="Tel No:"
+            android:textColorHint="@color/colorwhite"
+
+            android:inputType="phone"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+
+            android:layout_marginRight="10dp"  />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner1"
+            android:layout_below="@id/numberregister"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+
+            >
+
+        </Spinner>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:layout_below="@id/spinner1"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginLeft="10dp"
+
+            >
+
+        </Spinner>
+
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/bg_anasayfa"
+        app:itemTextColor="@color/colorwhite"
+        app:menu="@menu/activity_main_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

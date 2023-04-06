@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_anasayfa"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    >
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_anasayfa"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start"
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imglogox"
+            android:src="@drawable/logox"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+             />
+
+
+
+
+        <ImageView
+            android:id="@+id/imglogoy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slogan"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="100dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="280dp"
+            android:layout_marginBottom="40dp"
+            android:layout_centerHorizontal="true"
+
+            >
+            <VideoView
+                android:id="@+id/video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/buttonregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yumusatma"
+
+
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:layout_below="@+id/buttonlogin"
+            android:text="@string/create_new_account"
+
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/buttonlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="520dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/yumusatma"
+            android:text="@string/account_login"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/bg_anasayfa"
+        app:itemTextColor="@color/colorwhite"
+        app:menu="@menu/activity_main_drawer" />
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
